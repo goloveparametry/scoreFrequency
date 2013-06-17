@@ -169,3 +169,7 @@ qplot(x = scoreFT,
       fill = scoreFT) +  facet_grid(.~variable)
 
 # EXPORT 
+
+write.csv(df.dist.ht, "data/dist-ht.csv", row.names = F)
+write.csv(df.dist.ft, "data/dist-ft.csv", row.names = F)
+
